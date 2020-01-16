@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+    <div class="formDisplay">
+        <form id="studentForm" method="POST">
+            <table border="1">
+                <tr>
+                    <td>Name : </td>
+                    <td><input type="text" name="studentName" required></td>
+                </tr>
+                <tr>
+                    <td>Maths : </td>
+                    <td><input type="number" name="mathsMark"></td>
+                </tr>
+                <tr>
+                    <td>English : </td>
+                    <td><input type="number" name="engMark"></td>
+                </tr>
+                <tr>
+                    <td>Passing Year : </td>
+                    <td><input type="text" name="passYear"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="button" value="Register" onclick="return RegisterStudent()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div id="displayTable">
+        <table id="displayData" border="1">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Maths</th>
+                <th>English</th>
+                <th>Average</th>
+                <th>Passing Year</th>
+                <th>Created Date</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
